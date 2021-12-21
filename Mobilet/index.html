@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="vievport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    
+    <title>Mobilet</title>
+</head>
+<body>
+<div class="box">
+    <div class="nav">
+        <img src="/Img/arrow-left-solid.svg">
+        <div class="logo">
+            <p class="torun">Toruń KM</p>
+        </div>
+        <div class="smalltext">
+            <p>bilety jednoprzejazdowe i czasowe</p>
+        </div>
+       
+        <input type="button" id="invisible" onclick="NewTicket()">
+    </div>
+    <div class="main">
+        <div class="ticket">
+            <h4>Gmina Miasta Toruń - Komunikacja Miejska</h4>
+            <div class="animationdiv">
+                
+            </div>
+            <img src="/Img/herb_torunia_540.jpg" class="herb">
+            <p class="bigtext">Bilet:</p>
+            <p class="text">45 min. U</p>
+            <p class="bigtext2">Ważny do:</p>
+            <p id="textdata" class="text">17.12.2021r. 16:53</p>
+            <div class="whitebox">
+            <p id="Id">00000</p>
+            </div>
+        </div>
+        <input type="button" id="invisibleprevious">
+        <input type="button" id="invisiblenext" onclick="Next()">
+        <div class="footer">
+            <img src="/Img/circle-solid.svg" class="dot1" alt="dot">
+            <img src="/Img/circle-solid.svg" class="dot2" alt="dot">
+            <img src="/Img/circle-solid.svg" class="dot3" alt="dot">
+        </div>
+        
+    </div>
+</div>
+<script>
+    function NewTicket()
+    {
+        localStorage.removeItem('user');
+        DayId();
+    }
+    function DayId()
+    {
+        if(localStorage.getItem('user') == null)
+        {
+            let data = new Date();
+            let day,mont,year,hour,minute,seconds,dayid;
+
+            day = data.getDate();
+            month = data.getMonth() + 1;
+            year = data.getFullYear();
+            hour = data.getHours();
+            minute = data.getMinutes();
+            seconds = data.getSeconds();
+            dayid = prompt("Tworzysz nowy bilet o godzinie " + hour + ":" + minute + " Wprowadź dzienne id"); 
+            Id.innerHTML = dayid;
+            minute = minute + 45;
+            if(minute >= 60)
+            {
+                hour++;
+                minute = minute - 60;
+            }
+
+            if(minute >= 10)
+            {
+                textdata.innerHTML = day + "." + month + "." + year + "r." + " " + hour + ":" + minute ;
+            }
+            else
+            {
+                textdata.innerHTML = day + "." + month + "." + year + "r." + " " + hour + ":0" + minute;
+            }
+            const Fulldate = { day,month,year,hour,minute,seconds,dayid }
+            localStorage.setItem('user',JSON.stringify(Fulldate));
+        }
+        else
+        {
+            let encryptedData = JSON.parse(localStorage.getItem('user'));
+            day = encryptedData.day;
+            month = encryptedData.month;
+            year = encryptedData.year;
+            hour = encryptedData.hour;
+            minute = encryptedData.minute;
+            dayid = encryptedData.dayid;
+            Id.innerHTML = dayid;
+
+            if(minute >= 10)
+            {
+                textdata.innerHTML = day + "." + month + "." + year + "r." + " " + hour + ":" + minute;
+            }
+            else
+            {
+                textdata.innerHTML = day + "." + month + "." + year + "r." + " " + hour + ":0" + minute;
+            }
+        } 
+    }
+    function Start()
+    {
+        if(localStorage.getItem('user') != null)
+        {
+            DayId();
+        }
+    }
+    function Next()
+    {
+        location.href = "Secondpage.html";
+    }
+    Start();
+</script>
+</body>
+</html>
