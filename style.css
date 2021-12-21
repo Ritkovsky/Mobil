@@ -7,12 +7,11 @@
 {
     from
     {
-        margin-left: 70px;
+        margin-left: 110px;
     }
     to
     {
-        margin-left: 760px;
-        
+        margin-left: 763px;
     }
 }
 .box 
@@ -110,12 +109,13 @@
 }
 .animationdiv
 {
-    width: 135px;
+    width: 153px;
     height: 198px;
     z-index: 2;
     position: absolute;
-    margin-left: 76.1%;
+    margin-left: 74.4%;
     background-color: #bf0007;
+    display: initial;
 }
 .ticket h4
 {
