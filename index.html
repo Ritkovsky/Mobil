@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="vievport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <title>Mobilet</title>
+    <script src="script.js">
+    </script>
+</head>
+<body>
+<div class="box">
+
+    <div class="nav">
+        <img src="./Img/arrow-left-solid.svg">
+        <div class="logo">
+            <p class="torun">Wróć</p>
+        </div>
+        <input type="button" id="invisible" onclick="newTicket()">
+        <input type="button" id="invisible" onclick="pageLoad()">
+    </div>
+        
+    </div>
+    <div class="main">
+        <div class="ticket">
+            <img src="./Img/herb_torunia_540.jpg" class="herb">
+            <img src="./Img/qr.png" class="QRcode">
+            <p class="bigtext"> Nazwa:</p>
+            <p class="text">Gmina Miasta Toruń - Komunikacja Miejska</p>
+            <p class="bigtext">Bilet:</p>
+            <p class="text">45 min. U</p>
+            <p class="bigtext">Ważny do:</p>
+            <p id="expireDate" class="text">placeholder</p>
+            <p class="bigtext">Numer bieżący:</p>
+            <p class="text">190532211</p>
+            <p class="bigtext">Numer kontrolny:</p>
+            <p id="controlNumber" class="text">placeholder</p>
+            <img src="./Img/herb_torunia_540.jpg" class="herb">
+            <p class="bigtext">Cena:</p>
+            <p class="text">1,70 PLN</p>
+            <p class="bigtext">Czas zakupu:</p>
+            <p id="purchaseTime"class="text">placeholder</p>
+        </div>
+    </div>
+    
+</body>
+</html>
