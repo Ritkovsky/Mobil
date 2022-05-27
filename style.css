@@ -1,0 +1,125 @@
+*
+{
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+@keyframes slide
+{
+    from
+    {
+        margin-left: 0px;
+    }
+    to
+    {
+        margin-left: 763px;
+    }
+}
+.box 
+{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+.nav
+{
+    height: 150px;
+    width: 100%;
+    background-color: #1162a4;
+}
+.nav img
+{
+    width: 40px;
+    padding-left: 70px;
+    padding-top: 55px;
+    float: left;
+    filter: invert(100%) sepia(61%) saturate(2%) hue-rotate(255deg) brightness(107%) contrast(101%);
+}
+.logo
+{
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: left;
+    width: 500px;
+    height: 70px;
+    padding-top: 48px;
+    padding-left: 100px;
+    float: left
+}
+.smalltext
+{
+    color: white;
+    font-size: 33px;
+    height: 70px;
+    width: 500px;
+    text-align: left;
+    padding-left: 100px;
+    float: left;
+}
+#invisible
+{
+    float: left;
+    margin-top: -90px;
+    margin-left: 0px;
+    width: 120px;
+    height: 240px;
+    opacity: 0;
+}
+.main
+{
+    background-color: #ffffff;
+    margin: auto;
+    z-index: 3;
+}
+.ticket
+{
+    background-color: #ffffff;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    font-weight: 100;
+    font-style: normal;
+    height: 900px;
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+}
+.herb
+{
+    width: 164px;
+    padding-top: 30px;
+    padding-left: -140px;
+    animation-name: slide;
+    animation-duration: 4200ms;
+    overflow-x: hidden;
+    z-index: 1;
+    animation-iteration-count: infinite;
+}
+.QRcode
+{
+    width: 70%;
+    margin-left: 15%;
+}
+.bigtext
+{
+    font-size: 35px;
+    font-weight: 500;
+    color: rgb(177, 177, 177);
+    padding-bottom: 10px;
+    padding-left: 30px;
+}
+.text
+{
+    font-weight: 900;
+    font-size: 50px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    margin-top: 0px;
+}
+.qr
+{
+    width: 600px;
+    border: 30px solid white;
+    margin-left: 115px;
+    margin-top: 40px;
+}
