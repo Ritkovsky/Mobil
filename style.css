@@ -1,772 +1,131 @@
-/* Animacje*/
-@keyframes RotateAnimation {
-    0% {
-      transform: rotate(0);
-    }
-  
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  @keyframes BounceAnimation 
-  {
-    0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
-    40% {transform: translateY(-25px);} 
-    60% {transform: translateY(-15px);} 
- }
- /* Animacje*/
 *
 {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+@keyframes move {
+    from {
+      transform: translateX(-30vw);
+    }
+    to {
+      transform: translateX(100vw);
+    }
+  }
+@keyframes slide
+{
+    from
+    {
+        margin-left: 0px;
+    }
+    to
+    {
+        margin-left: 763px;
+    }
+}
+.box 
+{
     height: 100%;
-    margin: 0;
-    font-family: 'Raleway', sans-serif;
-}
-body
-{
-    background-color: #101820FF;
-}
-html 
-{
-    scroll-behavior: smooth;
-}
-.Hamburger
-{
-    display: none;
-}
-.Nav
-{
-    display: block;
-    position: fixed;
-    overflow: auto;
     width: 100%;
-    height: 80px;
-    z-index: 5;
-    background-color: #101820FF;
+    margin: auto;
 }
-.Drimer-logo
+.nav
 {
-    height: 50px;
-    float: left;
-    margin-left: 2%;
-    margin-top: 15px;
+    height: 150px;
+    width: 100%;
+    background-color: #1162a4;
 }
-.Hamburger-menu
+.nav img
 {
-    float: right;
-    margin-top: 20px;
-    margin-right: 20px;
-    height: 40px;
     width: 40px;
-    filter: invert(100%) sepia(0%) saturate(7469%) hue-rotate(126deg) brightness(100%) contrast(102%);
+    padding-left: 70px;
+    padding-top: 55px;
+    float: left;
+    filter: invert(100%) sepia(61%) saturate(2%) hue-rotate(255deg) brightness(107%) contrast(101%);
 }
-.Hamburger-menu:hover
+.logo
 {
-    animation: RotateAnimation 1s ease 0s 1 normal forwards;
-}
-.Hero
-{
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-}
-.Hero-text
-{
-    height: fit-content;
-    font-size: 4em;
-    margin: 0;
     color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: left;
+    width: 500px;
+    height: 70px;
+    padding-top: 48px;
+    padding-left: 100px;
+    float: left
 }
-.Hero-text-small
+.smalltext
 {
-    height: fit-content;
-    font-size: 3em;
-    margin: 0;
     color: white;
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-.Hero-button
-{
-    transition: 1s;
-    position: absolute;
-    width: 150px;
-    height: 50px;
-    font-size: 1.4em;
-    background-color: #fee715;
-    border: none;
-    border-radius: 5px;
-    transform: translate(-50%, -50%);
-    top: 75%;
-    left: 50%;
-    color: #202020;
-    letter-spacing: .1em;
-    text-shadow: 
-      -1px -1px 1px #111, 
-      2px 2px 1px #363636;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-}
-.Hero-button:hover
-{
-    transition: 1s;
-    position: absolute;
-    width: 150px;
-    height: 50px;
-    color: rgb(255, 255, 255);
-    font-size: 1.4em;
-    background-color: #FEE715FF ;
-    border: none;
-    border-radius: 3px;
-    transform: translate(-50%, -50%);
-    top: 75%;
-    left: 50%;
-    cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-}
-.Hero-button-box
-{
-    margin: auto;
-    margin-top: 870px;
-    width: fit-content;
-    height: fit-content;
-}
-.Arrows-down
-{
-    position: relative;
-    z-index: 3;
-    height: 40px;
-    width: 40px;
-    animation-name: BounceAnimation;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-fill-mode: both;
-}
-.Arrow-down-link
-{
-    margin: auto;
-    width: fit-content;
-    height: fit-content;
-}
-.Arrows-down:hover
-{
-    animation: none;
-}
-.Hero-line
-{
-    position: absolute;
-    top: 100%;
-    width: 99.9%;
-    height: 5px;
-    background-color: #101820FF;
-}
-.Info-header-box
-{
-    background-color: #FEE715FF;
-    border-radius:10px 10px 10px 0px;
-    width: fit-content;
-    height: fit-content;
-    margin: auto;
-}
-.Waves-solid0
-{
-    position: absolute;
-    width: 30%;
-    height: 55%;
-    left: 70%;
-    z-index: 2;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    filter: invert(80%) sepia(93%) saturate(473%) hue-rotate(346deg) brightness(102%) contrast(99%);
-}
-.Waves-solid1
-{
-    position: absolute;
-    width: 30%;
-    height: 55%;
-    left: 0.001%;
-    top: 128%;
-    z-index: 2;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    filter: invert(80%) sepia(93%) saturate(473%) hue-rotate(346deg) brightness(102%) contrast(99%);
-}
-.Info
-{
-    width: 100%;
-    height: max-content;
-    background-color: white;
-    text-align: center;
-    z-index: 1;
-    padding-top: 30px;
-}
-.Info h1
-{
-    width: max-content;
-    height: fit-content;
-    margin: auto;
-    margin-top: 40px;
-    margin-bottom: 30px;
-    padding:10px;
-}
-.Info-text-box
-{
-    background-color: white;
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    z-index: 1;
-}
-.Info-text-box-line
-{
-    position: absolute;
-    margin-top: 25px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    left: 0;
-    right: 0;
-    z-index: 4;
-    width: 150px;
-    height: 8px;
-    border: none;
-    border-radius: 5px;
-    background-color: #FEE715FF;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-.Info-text-box p
-{
-    position: relative;
-    width: 55%;
-    height: max-content;
-    margin: auto;
-    border-radius: 30px 30px 30px 0px;
-    z-index: 3;
-    padding-top: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 50px;
-    font-size: 140%;
+    font-size: 33px;
+    height: 70px;
+    width: 500px;
     text-align: left;
-    background-color: rgb(240, 240, 240);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-.Info-button
-{
-    transition: 1s;
-    position: relative;
-    font-size: 23px;
-    z-index: 3;
-    background-color: #ffffff;
-    border: none;
-    left: 20%;
-    border-radius: 5px;
-    width: fit-content;
-    height: 5%;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    
-}
-.Info-button:hover
-{
-    cursor: pointer;
-    background-color: #fee715;
-    color: #101820FF;
-}
-.Info-arrow-box
-{
-    margin: auto;
-    margin-top: -75px;
-    margin-bottom: 150px;
-    width: fit-content;
-    height: fit-content;
-}
-.Arrows-next
-{
-    position: relative;
-    z-index: 3;
-    height: 40px;
-    width: 40px;
-    animation-name: BounceAnimation;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-fill-mode: both;
-}
-.Arrows-next:hover
-{
-    transition: 2s;
-    animation: none;
-}
-.Offer
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 700px;
-    width: 100%;
-    background-color: white;
-}
-.Offer-header-box
-{
-    background-color: #FEE715FF;
-    border-radius:10px 10px 10px 0px;
-    width: fit-content;
-    height: fit-content;
-    margin: auto;
-}
-.First-card
-{
-    transition: 1s;
+    padding-left: 100px;
     float: left;
-    width: 25%;
-    height: 70%;
-    margin-right: 5%;
-    border-radius: 15px;
-    background-color: rgb(240, 240, 240);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-.First-card-header
+#invisible
 {
-    height: fit-content;
-    margin-top: 15px;
-}
-.First-card-text
-{
-    padding: 30px;
-    text-align: left;
-    height: 30px;
-    font-size: 1vw;
-    line-height: 25px;
-    font-weight: 400;
-}
-.Paint-roller-solid
-{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    height: 40px;
-    width: 40px;
-    opacity: 0.5;
-    filter: invert(80%) sepia(93%) saturate(473%) hue-rotate(346deg) brightness(102%) contrast(99%);
-}
-.Second-card
-{
-    transition: 1s;
     float: left;
-    width: 25%;
-    height: 70%;
-    margin-left: 5%;
-    border-radius: 15px;
-    background-color: rgb(240, 240, 240);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-top: -90px;
+    margin-left: 0px;
+    width: 120px;
+    height: 240px;
+    opacity: 0;
 }
-.Second-card-header
+.main
 {
-    height: fit-content;
-    margin-top: 15px;
-}
-.Second-card-text
-{
-    padding: 30px;
-    text-align: left;
-    height: 30px;
-    font-size: 1vw;
-    line-height: 25px;
-    font-weight: 400;
-    max-height: 300px;
-}
-#text
-{
-    max-height: 50%;
-}
-.Box-solid
-{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    height: 40px;
-    width: 40px;
-    opacity: 0.5;
-    filter: invert(80%) sepia(93%) saturate(473%) hue-rotate(346deg) brightness(102%) contrast(99%);
-}
-.Partnership
-{
-    width: 100%;
     background-color: #ffffff;
-}
-.Partnership-header-box
-{
-    background-color: #FEE715FF;
-    border-radius:10px 10px 10px 0px;
-    padding: 10px;
-    width: fit-content;
-    height: fit-content;
     margin: auto;
+    z-index: 3;
 }
-.Partnership-first-card
+.ticket
 {
-    transition: 1s;
-    position: absolute;
-    width: 25%;
-    height: 400px;
-    margin-left: 20%;
-    margin-top: 7%;
-    border-radius: 10px 10px 10px 0px;
-    background-color: rgb(240, 240, 240);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-.Partnership-second-card
-{
-    transition: 1s;
-    position: absolute;
-    width: 25%;
-    height: 400px;
-    margin-left: 40%;
-    margin-top: 15%;
-    border-radius: 10px 10px 10px 0px;
-    background-color: rgb(240, 240, 240);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-.Partnership-third-card
-{
-    transition: 1s;
-    position: absolute;
-    width: 25%;
-    height: 400px;
-    margin-left: 60%;
-    margin-top: 22%;
-    border-radius: 10px 10px 10px 0px;
-    background-color: rgb(240, 240, 240);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-.Partnership-first-card:hover
-{
-    transition: 1s;
-    margin-top: 5%;
-}
-.Partnership-second-card:hover
-{
-    transition: 1s;
-    margin-top: 13%;
-}
-.Partnership-third-card:hover
-{
-    transition: 1s;
-    margin-top: 20%;
-}
-.Partnership-card-header
-{
-    height: fit-content;
-    text-align: center;
-    margin-top: 15px;
-}
-.Partnership-box-solid
-{
-    height: 10%;
-    width: 10%;
-    margin-left: 45%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    opacity: 0.5;
-    filter: invert(80%) sepia(93%) saturate(473%) hue-rotate(346deg) brightness(102%) contrast(99%);
-}
-
-.Partnership-card-text
-{
-    padding: 50px;
-    padding-right: 100px;
-    text-align: center;
-    height: 30px;
-    font-size: 1.1vw;
-    line-height: 25px;
-    font-weight: 400;
-}
-.Partnership-third-card-text
-{
-    padding: 50px;
-    text-align: center;
-    height: 30px;
-    font-size: 1.1vw;
-    line-height: 25px;
-    font-weight: 400;
-}
-.Partnership-line
-{
-    width: 99.9%;
-    height: 5px;
-    border: none;
-    background-color: #101820FF;
-}
-.Contact
-{
-    margin: auto;
-    margin-top: 20px;
-    height: 90%;
+    background-color: #ffffff;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    font-weight: 100;
+    font-style: normal;
+    height: 900px;
     width: 90%;
-    border: 5px solid #101820FF;
-    border-radius: 10px;
-    overflow: hidden;
-}
-.Contact-map
-{
-    float: left;
-    width: 60%;
-    height: 100%;
-}
-.Contact-form
-{
-    display:block;
-    float: left;
-    width: 40%;
-    height: 100%;
-    max-height: 100%;
-    background-color: #fee715;
-}
-.Contact-form-header
-{
     margin: auto;
-    margin-top: 15px;
-    text-align: center;
-    color:#fee715;
-    background-color: #101820FF;
-    height: max-content;
-    width: max-content;
-    padding: 20px;
-    border-radius: 10px 10px 10px 0px;
-    text-shadow: 2px 2px 2px black;
+    margin-top: 50px;
 }
-.Contact-form-text
+.herb
 {
-    padding: 30px;
-    max-width: fit-content;
-    max-height: 30%;
-    font-size: 1vw;
+    width: 164px;
+    padding-top: 30px;
+    padding-left: -140px;
+    transform: translateX(-30vw);
+    animation: move 7s linear 0s infinite;
+    z-index: 1;
 }
-.Contact-form span
+.QRcode
 {
-    font-size: 1.1vw;
+    width: 70%;
+    margin-left: 15%;
+}
+.bigtext
+{
+    font-size: 35px;
     font-weight: 500;
+    color: rgb(177, 177, 177);
+    padding-bottom: 10px;
+    padding-left: 30px;
 }
-.Contact-form-text-input-box,.Contact-form-email-input-box,.Contact-form-message-input-box,.Contact-form-submit-box
+.text
 {
-    width: fit-content;
-    height: fit-content;
-    margin: auto;
+    font-weight: 900;
+    font-size: 50px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    margin-top: 0px;
 }
-.Contact-form-text-input
+.qr
 {
-    width: 300px;
-    height: 35px;
-    padding: 5px;
-    background-color: #101820FF;
-    color: #fee715;
-    border: none;
-    border-radius: 10px 10px 10px 0px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-.Contact-form-email-input
-{
-    width: 300px;
-    height: 35px;
-    padding: 5px;
-    background-color: #101820FF;
-    color: #fee715;
-    border: none;
-    border-radius: 10px 10px 10px 0px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-.Contact-form-message-input
-{
-    resize: none;
-    width: 285px;
-    height: 140px;
-    padding: 15px;
-    background-color: #101820FF;
-    color: #fee715;
-    border: none;
-    border-radius: 10px 10px 10px 0px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-.Contact-form-submit
-{
-    margin-top: -10px;
-    transition: 1s;
-    width: 250px;
-    height: 50px;
-    background-color: #101820FF;
-    color: #fee715;
-    font-size: 1.1vw;
-    border: none;
-    border-radius: 10px 10px 10px 0px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-.Contact-form-submit:hover
-{
-    transition: 1s;
-    background-color: black;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-#background
-{
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
-}
-/* Media Queriers*/
-
-/* 420px */
-@media all and (max-width: 420px)
-{
-    .Hero-text
-    {
-        font-size: 3em;
-    }
-    .Info-button
-    {
-        left: 0%;
-    }
-    .Info-header-box
-    {
-        width: 100%;
-        height: 65px;
-        font-size: 3.5vw;
-        margin-bottom: 20px;
-    }
-    .Hero-text-small
-    {
-        font-size: 7vw;
-    }
-    .Hero-button-box
-    {
-       margin-top: 800px;
-    }
-    .Info-header-box h1
-    {
-        padding-top: 15px;
-    }
-    .Info-arrow-box
-    {
-        margin-top: -80px;
-    }
-    .Info-text-box
-    {
-        font-size: 3.2vw;
-    }
-    .Waves-solid0,.Waves-solid1
-    {
-        display: none;
-    }
-    .Offer
-    {
-        display: inline-block;
-        height: 1000px;
-    }
-    .Offer-header-box
-    {
-        width: 100%;
-        height: 65px;
-        font-size: 3.5vw;
-        margin-bottom: 20px;
-    }
-    .Offer-header-box h1
-    {
-        padding-top: 15px;
-    }
-    .First-card
-    {
-        position: relative;
-        margin: auto;
-        width: 80%;
-        height: 40%;
-        margin-bottom: 50px;
-        margin-left: 10%;
-    }
-    .First-card-text,.Second-card-text
-    {
-        font-size: 4vw;
-        margin-top: -40px;
-    }
-    .Second-card
-    {
-        position: relative;
-        margin: auto;
-        width: 80%;
-        height: 50%;
-        margin-left: 10%;
-    }
-    .Partnership
-    {
-        height: 1600px;
-    }
-    .Partnership-header-box
-    {
-        height: 70px;
-        font-size: 3.5vw;
-        text-align: center;
-    }
-    .Partnership-first-card,.Partnership-second-card,.Partnership-third-card
-    {
-        position: relative;
-        width: 80%;
-        margin-left: 10%;
-    }
-    .Partnership-card-text,.Partnership-third-card-text
-    {
-        font-size: 4vw;
-        text-align: center;
-        padding: 50px;
-    }
-    .Partnership-card-header
-    {
-        padding-top: 40px;
-    }
-    .Contact
-    {
-        border: none;
-        border-radius: 0px;
-        width: 100%;
-        margin-top: 0px;
-        height: 1380px;
-    }
-    .Contact-map
-    {
-        width: 100%;
-        height: 400px;
-    }
-    form
-    {
-        margin-top: -80px;
-    }
-    .Contact-form
-    {
-       position: relative;
-       width: 100%;
-    }
-    .Contact-form-text
-    {
-        font-size: 4vw;
-    }
-    .Contact-form-submit
-    {
-       margin-top: 10px;
-       font-size: 4vw;
-    }
-}
-
-@media all and (max-width: 1150px)
-{
-
+    width: 600px;
+    border: 30px solid white;
+    margin-left: 115px;
+    margin-top: 40px;
 }
