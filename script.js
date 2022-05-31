@@ -121,7 +121,7 @@ function ticketLoader()
         //Displaying loaded date.
         expireDate.innerHTML = day+"."+month+"."+year+"r. "+hour+":"+minute;
 }
-fuction fullscreen()
+function fullscreen()
 {
   document.body.requestFullscreen();
-} 
+}
