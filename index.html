@@ -8,45 +8,46 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
     <title>Mobilet</title>
-    <script src="script.js">
-    </script>
 </head>
 <body>
-<div class="box">
-
-    <div class="nav">
-        <img src="./Img/arrow-left-solid.svg">
-        <div class="logo">
-            <p class="torun">Wróć</p>
+<div id="fullscreen">
+    <div class="box">
+        <div class="nav">
+            <img src="./Img/arrow-left-solid.svg">
+            <div class="logo">
+                <p class="torun">Wróć</p>
+                <p style="position:absolute; right: 40px; top: 60px; font-size: 35px;">ZWRÓĆ BILET</p>
+            </div>
+            <input type="button" id="invisible" onclick="newTicket()">
+            <input type="button" id="invisible" onclick="fullscreen()">
         </div>
-        <input type="button" id="invisible" onclick="newTicket()">
-        <input type="button" id="invisible" onclick="fullscreen()">
+            
     </div>
-        
-    </div>
-    <div class="main">
-        <div class="ticket">
-            <img src="./Img/herb_torunia_540.jpg" class="herb">
-            <img src="./Img/qr.png" class="QRcode">
-            <p class="bigtext"> Nazwa:</p>
-            <p class="text">Gmina Miasta Toruń - Komunikacja Miejska</p>
-            <p class="bigtext">Bilet:</p>
-            <p class="text">Sieć strefa I D/N U</p>
-            <p class="bigtext">Dowód tożsamości:</p>
-            <p class="text">1502021</p>
-            <p class="bigtext">Ważny do:</p>
-            <p id="expireDate" class="text">21.06.2022r.</p>
-            <p class="bigtext">Numer bieżący:</p>
-            <p class="text">179206387</p>
-            <p class="bigtext">Numer kontrolny:</p>
-            <p id="controlNumber" class="text">11360</p>
-            <img src="./Img/herb_torunia_540.jpg" class="herb">
-            <p class="bigtext">Cena:</p>
-            <p class="text">44,00 PLN</p>
-            <p class="bigtext">Czas zakupu:</p>
-            <p id="purchaseTime"class="text">23.05.2022r. 07:06:22</p>
+        <div class="main">
+            <div class="ticket">
+                <img src="./Img/herb_torunia_540.jpg" class="herb">
+                <img src="./Img/qr.png" class="QRcode">
+                <p class="bigtext"> Nazwa:</p>
+                <p class="text">Gmina Miasta Toruń - Komunikacja Miejska</p>
+                <p class="bigtext">Bilet:</p>
+                <p class="text">Sieć strefa I D/N U</p>
+                <p class="bigtext">Dowód tożsamości:</p>
+                <p class="text">1382021</p>
+                <p class="bigtext">Ważny do:</p>
+                <p id="expireDate" class="text">21.06.2022r.</p>
+                <p class="bigtext">Numer bieżący:</p>
+                <p class="text">179206387</p>
+                <p class="bigtext">Numer kontrolny:</p>
+                <p id="controlNumber" class="text">11360</p>
+                <img src="./Img/herb_torunia_540.jpg" class="herb">
+                <p class="bigtext">Cena:</p>
+                <p class="text">44,00 PLN</p>
+                <p class="bigtext">Czas zakupu:</p>
+                <p id="purchaseTime"class="text">23.05.2022r. 07:06:22</p>
+            </div>
         </div>
-    </div>
-    
+</div>
+<script src="script.js">
+</script>
 </body>
 </html>

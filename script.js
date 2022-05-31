@@ -123,5 +123,6 @@ function ticketLoader()
 }
 function fullscreen()
 {
-  document.body.requestFullscreen();
+        let videoElement = document.getElementById('fullscreen');
+        videoElement.requestFullscreen();
 }
